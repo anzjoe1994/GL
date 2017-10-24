@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		FB047EAB1F9F2FCC0052F071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047EAA1F9F2FCC0052F071 /* AppDelegate.swift */; };
-		FB047EAD1F9F2FCC0052F071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047EAC1F9F2FCC0052F071 /* ViewController.swift */; };
 		FB047EB01F9F2FCC0052F071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB047EAE1F9F2FCC0052F071 /* Main.storyboard */; };
 		FB047EB21F9F2FCC0052F071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB047EB11F9F2FCC0052F071 /* Assets.xcassets */; };
 		FB047EB51F9F2FCC0052F071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB047EB31F9F2FCC0052F071 /* LaunchScreen.storyboard */; };
 		FB047EC01F9F2FCC0052F071 /* MyPaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047EBF1F9F2FCC0052F071 /* MyPaintTests.swift */; };
 		FB047ECB1F9F2FCC0052F071 /* MyPaintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047ECA1F9F2FCC0052F071 /* MyPaintUITests.swift */; };
+		FB047EDC1F9F310D0052F071 /* NumTypes+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047ED81F9F310D0052F071 /* NumTypes+Conversion.swift */; };
+		FB047EDD1F9F310D0052F071 /* fileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047ED91F9F310D0052F071 /* fileUtil.swift */; };
+		FB047EDE1F9F310D0052F071 /* shaderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047EDA1F9F310D0052F071 /* shaderUtil.swift */; };
+		FB047EDF1F9F310D0052F071 /* debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047EDB1F9F310D0052F071 /* debug.swift */; };
+		FB047EE31F9F315C0052F071 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FB047EE11F9F315C0052F071 /* point.fsh */; };
+		FB047EE41F9F315C0052F071 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FB047EE21F9F315C0052F071 /* point.vsh */; };
+		FB047EE81F9F31F70052F071 /* PaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047EE61F9F31F70052F071 /* PaintingViewController.swift */; };
+		FB047EE91F9F31F70052F071 /* PaintingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB047EE71F9F31F70052F071 /* PaintingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		FB047EA71F9F2FCC0052F071 /* MyPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB047EAA1F9F2FCC0052F071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB047EAC1F9F2FCC0052F071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB047EAF1F9F2FCC0052F071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB047EB11F9F2FCC0052F071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB047EB41F9F2FCC0052F071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,20 @@
 		FB047EC61F9F2FCC0052F071 /* MyPaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB047ECA1F9F2FCC0052F071 /* MyPaintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPaintUITests.swift; sourceTree = "<group>"; };
 		FB047ECC1F9F2FCC0052F071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB047ED81F9F310D0052F071 /* NumTypes+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumTypes+Conversion.swift"; sourceTree = "<group>"; };
+		FB047ED91F9F310D0052F071 /* fileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileUtil.swift; sourceTree = "<group>"; };
+		FB047EDA1F9F310D0052F071 /* shaderUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shaderUtil.swift; sourceTree = "<group>"; };
+		FB047EDB1F9F310D0052F071 /* debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debug.swift; sourceTree = "<group>"; };
+		FB047EE11F9F315C0052F071 /* point.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = point.fsh; sourceTree = "<group>"; };
+		FB047EE21F9F315C0052F071 /* point.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = point.vsh; sourceTree = "<group>"; };
+		FB047EE61F9F31F70052F071 /* PaintingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingViewController.swift; sourceTree = "<group>"; };
+		FB047EE71F9F31F70052F071 /* PaintingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingView.swift; sourceTree = "<group>"; };
+		FB047EEA1F9F33660052F071 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		FB047EEB1F9F33660052F071 /* Purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purple.png; sourceTree = "<group>"; };
+		FB047EEC1F9F33660052F071 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		FB047EED1F9F33660052F071 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		FB047EEE1F9F33660052F071 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
+		FB047EEF1F9F55BC0052F071 /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +118,17 @@
 			isa = PBXGroup;
 			children = (
 				FB047EAA1F9F2FCC0052F071 /* AppDelegate.swift */,
-				FB047EAC1F9F2FCC0052F071 /* ViewController.swift */,
+				FB047EE71F9F31F70052F071 /* PaintingView.swift */,
+				FB047EE61F9F31F70052F071 /* PaintingViewController.swift */,
 				FB047EAE1F9F2FCC0052F071 /* Main.storyboard */,
+				FB047EEA1F9F33660052F071 /* Blue.png */,
+				FB047EEC1F9F33660052F071 /* Green.png */,
+				FB047EEB1F9F33660052F071 /* Purple.png */,
+				FB047EED1F9F33660052F071 /* Red.png */,
+				FB047EEE1F9F33660052F071 /* Yellow.png */,
+				FB047EEF1F9F55BC0052F071 /* Particle.png */,
+				FB047EE51F9F31610052F071 /* Shaders */,
+				FB047EE01F9F311B0052F071 /* Other Sources */,
 				FB047EB11F9F2FCC0052F071 /* Assets.xcassets */,
 				FB047EB31F9F2FCC0052F071 /* LaunchScreen.storyboard */,
 				FB047EB61F9F2FCC0052F071 /* Info.plist */,
@@ -123,6 +152,26 @@
 				FB047ECC1F9F2FCC0052F071 /* Info.plist */,
 			);
 			path = MyPaintUITests;
+			sourceTree = "<group>";
+		};
+		FB047EE01F9F311B0052F071 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FB047EDB1F9F310D0052F071 /* debug.swift */,
+				FB047ED91F9F310D0052F071 /* fileUtil.swift */,
+				FB047ED81F9F310D0052F071 /* NumTypes+Conversion.swift */,
+				FB047EDA1F9F310D0052F071 /* shaderUtil.swift */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FB047EE51F9F31610052F071 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FB047EE11F9F315C0052F071 /* point.fsh */,
+				FB047EE21F9F315C0052F071 /* point.vsh */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +283,8 @@
 			files = (
 				FB047EB51F9F2FCC0052F071 /* LaunchScreen.storyboard in Resources */,
 				FB047EB21F9F2FCC0052F071 /* Assets.xcassets in Resources */,
+				FB047EE41F9F315C0052F071 /* point.vsh in Resources */,
+				FB047EE31F9F315C0052F071 /* point.fsh in Resources */,
 				FB047EB01F9F2FCC0052F071 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB047EAD1F9F2FCC0052F071 /* ViewController.swift in Sources */,
+				FB047EE81F9F31F70052F071 /* PaintingViewController.swift in Sources */,
+				FB047EE91F9F31F70052F071 /* PaintingView.swift in Sources */,
+				FB047EDF1F9F310D0052F071 /* debug.swift in Sources */,
 				FB047EAB1F9F2FCC0052F071 /* AppDelegate.swift in Sources */,
+				FB047EDC1F9F310D0052F071 /* NumTypes+Conversion.swift in Sources */,
+				FB047EDD1F9F310D0052F071 /* fileUtil.swift in Sources */,
+				FB047EDE1F9F310D0052F071 /* shaderUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
